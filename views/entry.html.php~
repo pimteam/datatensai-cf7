@@ -1,0 +1,26 @@
+<style type="text/css">
+.datatensai_form label {
+	width: 10em;
+	display: block;
+	font-weight: bold;
+}
+</style>
+
+<div class="wrap">
+	<h1><?php printf(__('Viewing Entry in "%s"', $txtd), stripslashes($form->title));?></h1>
+	
+	<p><a href="admin.php?page=datatensai_entries&form_id=<?php echo $form->id?>"><?php _e('Back to all form entries', $txtd);?></a></p>
+	
+	<div class="welcome-panel datatensai_form">
+		<p><label><?php _e('Date/time:', $txtd);?></label> <?php echo date_i18n($dateformat.' '.$timeformat, strtotime($entry->datetime));?></p>
+		
+		<?php foreach($fields as $field):
+			if($field->ftype == 'checkbox') $field->data = str_replace('|||', ', ', $field->data);?>
+			<p><label><?php echo self :: prettify($field->name);?>:</label>
+				<?php if($field->ftype == 'file'):?>
+				<a href="<?php echo DATATENSAI_UPLOAD_URL.'/'.$field->data?>"><?php _e('view or download file', $txtd);?></a>
+				<?php else :echo nl2br($field->data); endif;?>			
+			</p>
+		<?php endforeach;?>	
+	</div>
+</div>

@@ -1,0 +1,258 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: makepot.js 0.3.0\n"
+
+#: controllers/manage.php:45
+msgid "Wrong form ID"
+msgstr ""
+
+#: controllers/manage.php:236
+msgid "There is no data for this field"
+msgstr ""
+
+#: controllers/manage.php:300
+msgid "Name"
+msgstr ""
+
+#: controllers/manage.php:301
+msgid "Email"
+msgstr ""
+
+#: controllers/manage.php:302
+msgid "Subject"
+msgstr ""
+
+#: views/disable-fields.html.php:2
+msgid "Disable fields / columns in \"%s\""
+msgstr ""
+
+#: views/disable-fields.html.php:4
+msgid "Back to all forms"
+msgstr ""
+
+#: views/disable-fields.html.php:6
+msgid "When you disable fields the data from them is not going to be stored in the file system. These fields will not shown as table columns on your entries page and will not be available as filters. You can re-enable the fields any time and they will start saving data again."
+msgstr ""
+
+#: views/disable-fields.html.php:11
+msgid "Field name"
+msgstr ""
+
+#: views/disable-fields.html.php:11
+msgid "Field type"
+msgstr ""
+
+#: views/disable-fields.html.php:11
+msgid "Disable"
+msgstr ""
+
+#: views/disable-fields.html.php:27
+msgid "Save disabled fields"
+msgstr ""
+
+#: views/entries.html.php:12
+msgid "Manage contact form entries in \"%s\""
+msgstr ""
+
+#: views/entries.html.php:16
+msgid "Filter/search these records"
+msgstr ""
+
+#: views/entries.html.php:26
+msgid "Equals"
+msgstr ""
+
+#: views/entries.html.php:27
+msgid "Starts with"
+msgstr ""
+
+#: views/entries.html.php:28
+msgid "Ends with"
+msgstr ""
+
+#: views/entries.html.php:29
+msgid "Contains"
+msgstr ""
+
+#: views/entries.html.php:33
+msgid "Date"
+msgstr ""
+
+#: views/entries.html.php:35
+msgid "Is before"
+msgstr ""
+
+#: views/entries.html.php:36
+msgid "Is after"
+msgstr ""
+
+#: views/entries.html.php:37
+msgid "Range"
+msgstr ""
+
+#: views/entries.html.php:44
+msgid "Search/Filter"
+msgstr ""
+
+#: views/entries.html.php:45
+msgid "Clear Filters"
+msgstr ""
+
+#: views/entries.html.php:50
+msgid "There are no entries yet."
+msgstr ""
+
+#: views/entries.html.php:58
+msgid "Select bulk action"
+msgstr ""
+
+#: views/entries.html.php:75
+msgid "ID"
+msgstr ""
+
+#: views/entries.html.php:86
+msgid "Date and time"
+msgstr ""
+
+#: views/entries.html.php:87
+msgid "Actions"
+msgstr ""
+
+#: views/entries.html.php:103
+msgid "View"
+msgstr ""
+
+#: views/entries.html.php:104
+msgid "Delete"
+msgstr ""
+
+#: views/entries.html.php:114
+msgid "Showing"
+msgstr ""
+
+#: views/entries.html.php:114
+msgid "from"
+msgstr ""
+
+#: views/entries.html.php:114
+msgid "records"
+msgstr ""
+
+#: views/entries.html.php:119
+msgid "previous page"
+msgstr ""
+
+#: views/entries.html.php:123
+msgid "next page"
+msgstr ""
+
+#: views/entries.html.php:147
+msgid "Field Stats"
+msgstr ""
+
+#: views/entry.html.php:10
+msgid "Viewing Entry in \"%s\""
+msgstr ""
+
+#: views/entry.html.php:12
+msgid "Back to all form entries"
+msgstr ""
+
+#: views/entry.html.php:15
+msgid "Date/time:"
+msgstr ""
+
+#: views/entry.html.php:21
+msgid "view or download file"
+msgstr ""
+
+#: views/field-stats.html.php:1
+msgid "Stats for field \"%s\""
+msgstr ""
+
+#: views/field-stats.html.php:14
+msgid "[Not answered]"
+msgstr ""
+
+#: views/field-stats.html.php:6
+msgid "Answer"
+msgstr ""
+
+#: views/field-stats.html.php:6
+msgid "Count"
+msgstr ""
+
+#: views/field-stats.html.php:6
+msgid "% of all"
+msgstr ""
+
+#: views/field-stats.html.php:22
+msgid "Bar Chart"
+msgstr ""
+
+#: views/field-stats.html.php:23
+msgid "Pie Chart"
+msgstr ""
+
+#: views/field-stats.html.php:34
+msgid "# of Answers"
+msgstr ""
+
+#: views/forms.html.php:52
+msgid "Yes"
+msgstr ""
+
+#: views/forms.html.php:52
+msgid "No"
+msgstr ""
+
+#: views/forms.html.php:9
+msgid "View Contact Forms"
+msgstr ""
+
+#: views/forms.html.php:11
+msgid "This page lets you see all your Contact Form 7 forms along with the entries in them. You can disable selected forms. Disabled forms will not save any entry data."
+msgstr ""
+
+#: views/forms.html.php:13
+msgid "When user registration is ON the selected forms will automatically register the contact as an user in your site. The default WordPress regisration email with an auto generated password will be sent."
+msgstr ""
+
+#: views/forms.html.php:22
+msgid "Bulk Actions"
+msgstr ""
+
+#: views/forms.html.php:23
+msgid "Enable"
+msgstr ""
+
+#: views/forms.html.php:25
+msgid "User registration ON"
+msgstr ""
+
+#: views/forms.html.php:26
+msgid "User registration OFF"
+msgstr ""
+
+#: views/forms.html.php:38
+msgid "Form Title"
+msgstr ""
+
+#: views/forms.html.php:39
+msgid "Number of entries"
+msgstr ""
+
+#: views/forms.html.php:40
+msgid "User registration"
+msgstr ""
+
+#: views/forms.html.php:49
+msgid "[Edit]"
+msgstr ""
+
+#: views/forms.html.php:50
+msgid "[Disable Fields]"
+msgstr ""
