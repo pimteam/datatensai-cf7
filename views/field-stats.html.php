@@ -11,7 +11,7 @@
 			if(empty($class)) $class = 'alternate';
 			else $class = '';?>
 			<tr class="<?php echo $class;?>">
-				<td><?php echo $ans ? stripslashes($ans) : __('[Not answered]', 'datatensai-cf7');?></td>
+				<td><?php echo $ans ? esc_atr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7');?></td>
 				<td><?php echo $cnt;?></td>
 				<td><?php echo $total ? round(100 * $cnt / $total) : 0; ?>%</td>
 			</tr>
@@ -29,7 +29,7 @@ var ctx = document.getElementById('barChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? stripslashes($ans) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
+        labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? esc_attr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
         datasets: [{
             label: '<?php _e("# of Answers", 'datatensai-cf7');?>',
             data: [<?php foreach($answers as $ans => $cnt): echo $cnt.','; endforeach;?>],
@@ -69,7 +69,7 @@ var pie = document.getElementById('pieChart').getContext('2d');
 var pieChart = new Chart(pie, {
     type: 'pie',
     data: {
-        labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? stripslashes($ans) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
+        labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? esc_attr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
         datasets: [{
             label: '<?php _e("# of Answers", 'datatensai-cf7');?>',
             data: [<?php foreach($answers as $ans => $cnt): echo $cnt.','; endforeach;?>],

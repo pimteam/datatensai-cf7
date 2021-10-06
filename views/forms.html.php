@@ -44,7 +44,7 @@ td.disabled {
 			<?php foreach($forms as $form):
 			   if(empty($class)) $class = 'alternate';
 			   else $class = '';?>
-				<tr class="<?php echo $class;?>">
+				<tr class="<?php echo esc_attr($class);?>">
 					<td><input type="checkbox" name="form_ids[]" value="<?php echo $form->id;?>"  class="fids" onclick="toggleMassActions();" ></td>
 					<td class="<?php if(!empty($form->is_disabled)) echo 'disabled';?>"><b><?php echo stripslashes($form->title);?> <a href="admin.php?page=wpcf7&post=<?php echo $form->form_post_id;?>&action=edit"><?php _e('[Edit]', 'datatensai-cf7');?></a>
 					<?php if(empty($form->is_disabled)):?><a href="admin.php?page=datatensai_disable_fields&form_id=<?php echo $form->id;?>"><?php _e('[Disable Fields]', 'datatensai-cf7');?></a><?php endif;?></b></td>

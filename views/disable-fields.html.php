@@ -14,9 +14,9 @@
 			<?php foreach($fields as $field):
 				if(empty($class)) $class = 'alternate';
 				else $class = '';?>
-				<tr class="<?php echo $class?>">
-					<td><?php echo self :: prettify($field->name);?></td>
-					<td><?php echo $field->ftype;?></td>
+				<tr class="<?php echo esc_attr($class)?>">
+					<td><?php echo esc_attr(self :: prettify($field->name));?></td>
+					<td><?php echo esc_attr($field->ftype);?></td>
 					<td><input type="checkbox" name="ids[]" value="<?php echo $field->id?>" <?php if($field->is_disabled) echo "checked";?>></td>
 				</tr>
 			<?php endforeach;?>

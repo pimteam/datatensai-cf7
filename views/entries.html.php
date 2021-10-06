@@ -22,7 +22,7 @@ tr.tensai-unread td {
 			<?php foreach($fields as $field):
 				if($field->ftype == 'file') continue;
 				$filter_name = 'field_'.$field->id.'_filter';?>
-				<p><label><?php echo self :: prettify($field->name);?></label> <select name="<?php echo $filter_name;?>">
+				<p><label><?php echo esc_attr(self :: prettify($field->name));?></label> <select name="<?php echo esc_attr($filter_name);?>">
 					<option value="equals" <?php if(empty($_GET[$filter_name]) or $_GET[$filter_name]=='equals') echo "selected"?>><?php _e('Equals', 'datatensai-cf7')?></option>
 					<option value="starts" <?php if(!empty($_GET[$filter_name]) and $_GET[$filter_name]=='starts') echo "selected"?>><?php _e('Starts with', 'datatensai-cf7')?></option>
 					<option value="ends" <?php if(!empty($_GET[$filter_name]) and $_GET[$filter_name]=='ends') echo "selected"?>><?php _e('Ends with', 'datatensai-cf7')?></option>
@@ -92,7 +92,7 @@ tr.tensai-unread td {
 			   $read_class = $entry->is_read ? '' : 'tensai-unread';
 				if(empty($class)) $class = 'alternate';
 				else $class = '';?>
-				<tr class="<?php echo $class;?> <?php echo $read_class?>">
+				<tr class="<?php echo esc_attr($class);?> <?php echo esc_attr($read_class)?>">
 					<td><input type="checkbox" name="entry_ids[]" value="<?php echo $entry->id;?>"  class="eids" onclick="toggleMassActions();" ></td>
 					<td><?php echo $entry->id?></td>
 					<?php foreach($fields as $field):
