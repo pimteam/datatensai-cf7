@@ -18,8 +18,8 @@
 			if($field->ftype == 'checkbox') $field->data = str_replace('|||', ', ', $field->data);?>
 			<p><label><?php echo esc_attr(self :: prettify($field->name));?>:</label>
 				<?php if($field->ftype == 'file'):?>
-				<a href="<?php echo DATATENSAI_UPLOAD_URL.'/'.$field->data?>"><?php _e('view or download file', 'datatensai-cf7');?></a>
-				<?php else :echo nl2br($field->data); endif;?>			
+				<a href="<?php echo esc_url(DATATENSAI_UPLOAD_URL.'/'.$field->data)?>"><?php _e('view or download file', 'datatensai-cf7');?></a>
+				<?php else :echo nl2br(wp_kses($field->data, 'strip')); endif;?>			
 			</p>
 		<?php endforeach;?>	
 	</div>

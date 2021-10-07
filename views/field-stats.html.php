@@ -10,9 +10,9 @@
 		<?php foreach($answers as $ans => $cnt):
 			if(empty($class)) $class = 'alternate';
 			else $class = '';?>
-			<tr class="<?php echo $class;?>">
+			<tr class="<?php echo esc_attr($class);?>">
 				<td><?php echo $ans ? esc_atr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7');?></td>
-				<td><?php echo $cnt;?></td>
+				<td><?php echo intval($cnt);?></td>
 				<td><?php echo $total ? round(100 * $cnt / $total) : 0; ?>%</td>
 			</tr>
 		<?php endforeach;?>
@@ -32,7 +32,7 @@ var myChart = new Chart(ctx, {
         labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? esc_attr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
         datasets: [{
             label: '<?php _e("# of Answers", 'datatensai-cf7');?>',
-            data: [<?php foreach($answers as $ans => $cnt): echo $cnt.','; endforeach;?>],
+            data: [<?php foreach($answers as $ans => $cnt): echo intval($cnt).','; endforeach;?>],
             backgroundColor: [
                 <?php $i = 0; 
                 foreach($answers as $ans):
@@ -72,7 +72,7 @@ var pieChart = new Chart(pie, {
         labels: [<?php foreach($answers as $ans => $cnt): echo "'".($ans ? esc_attr(stripslashes($ans)) : __('[Not answered]', 'datatensai-cf7'))."',"; endforeach;?>],
         datasets: [{
             label: '<?php _e("# of Answers", 'datatensai-cf7');?>',
-            data: [<?php foreach($answers as $ans => $cnt): echo $cnt.','; endforeach;?>],
+            data: [<?php foreach($answers as $ans => $cnt): echo intval($cnt).','; endforeach;?>],
             backgroundColor: [
                 <?php $i = 0; 
                 foreach($answers as $ans):
