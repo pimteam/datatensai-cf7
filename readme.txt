@@ -1,9 +1,10 @@
 === Data Tensai for Contact Form 7 ===
 Contributors: prasunsen, wakeop
 Tags: contact form, contact form 7, cf7, database
-Requires at least: 4.2
-Tested up to: 5.8
-Stable tag: 0.5.5
+Requires at least: 5.0
+Requires PHP: 7.0
+Tested up to: 6.2
+Stable tag: 0.5.6
 License: GPLv2 or later
 
 Database management for Contact Form 7: Search, filter, sort, export and get useful reports.
@@ -73,7 +74,12 @@ None yet, please ask in the forum
 
 == Screenshots ==
 
-To be added after publishing
+1. View contact forms and number of entries
+2. View entries of a selected contact form
+3. View a single entry
+4. Disable selected fields
+5. Filter entries of a contact form
+6. View charts and stats on a quantitative field
 
 == Changelog ==
 

@@ -11,7 +11,7 @@
 	
 	<p><a href="admin.php?page=datatensai_entries&form_id=<?php echo $form->id?>"><?php _e('Back to all form entries', 'datatensai-cf7');?></a></p>
 	
-	<div class="welcome-panel datatensai_form">
+	<div class="wrap datatensai_form">
 		<p><label><?php _e('Date/time:', 'datatensai-cf7');?></label> <?php echo date_i18n($dateformat.' '.$timeformat, strtotime($entry->datetime));?></p>
 		
 		<?php foreach($fields as $field):

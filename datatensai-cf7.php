@@ -4,7 +4,7 @@ Plugin Name: Data Tensai for Contact Form 7
 Plugin URI: https://calendarscripts.info/data-tensai/
 Description: Advaned database management, export, and enhancements for Contact Form 7
 Author: Kiboko Labs
-Version: 0.5.5
+Version: 0.5.6
 Author URI: http://calendarscripts.info/
 License: GPLv2 or later
 Text domain: datatensai-cf7
